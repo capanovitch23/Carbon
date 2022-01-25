@@ -17,6 +17,7 @@ function darkMode() {
   }
 
 function toTop() {
+  console.log("poo")
   document.documentElement.scrollTop = 0;
 }
 
