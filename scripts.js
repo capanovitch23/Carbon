@@ -89,5 +89,4 @@ var rg3 = document.getElementById("rg3");
 
 function gradBlur() {
     var x = document.documentElement.scrollTop;
-    console.log('scrolled ')
 }
