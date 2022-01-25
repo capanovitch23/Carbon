@@ -1,0 +1,44 @@
+.slideshow{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.slides{
+    width: 70rem;
+    height: 40rem;
+}
+
+.slideheader{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttondisplayleft{
+    display: block;
+    background: transparent;
+    border: 0px;
+    z-index: 1;
+}
+.buttondisplayright{
+    display: block;
+    background: transparent;
+    border: 0px;
+    z-index: 1;
+}
+
+.buttondisplayright img{
+    transform: scaleX(-1);
+    width: 5rem;
+    height: 5rem;
+}
+
+.buttondisplayleft img{
+    width: 5rem;
+    height: 5rem;
+}
+.buttondisplayright{
+    float: right;
+}
