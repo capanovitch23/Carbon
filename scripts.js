@@ -26,8 +26,8 @@ var sq4 = document.getElementById("sq4");
 
 function counterRotate(x) {
     if(x==1){
-      sq2.style.transitionDelay = ".08s"
-      sq4.style.transitionDelay = ".08s"
+      sq2.style.transitionDelay = ".1s"
+      sq4.style.transitionDelay = ".1s"
       sq2.style.transformOrigin = "center";
       sq2.style.transformBox = "auto-fill";
       sq2.style.transform = "rotate(-45deg) scale(.8)";
@@ -36,8 +36,8 @@ function counterRotate(x) {
       sq4.style.transform = "rotate(-45deg) scale(.8)";
     }
     if(x==2){
-      sq1.style.transitionDelay = ".08s"
-      sq4.style.transitionDelay = ".08s"
+      sq1.style.transitionDelay = ".1s"
+      sq4.style.transitionDelay = ".1s"
       sq1.style.transformOrigin = "center";
       sq1.style.transformBox = "auto-fill";
       sq1.style.transform = "rotate(-45deg) scale(.8)";
@@ -46,8 +46,8 @@ function counterRotate(x) {
       sq4.style.transform = "rotate(-45deg) scale(.8)";
     }
     if(x==4){
-      sq1.style.transitionDelay = ".08s"
-      sq2.style.transitionDelay = ".08s"
+      sq1.style.transitionDelay = ".1s"
+      sq2.style.transitionDelay = ".1s"
       sq1.style.transformOrigin = "center";
       sq1.style.transformBox = "auto-fill";
       sq1.style.transform = "rotate(-45deg) scale(.8)";

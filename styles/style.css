@@ -14,8 +14,7 @@ body{
     background-size: cover; 
     display: flex;
     justify-content: center;
-    margin: 0 10rem 0 10rem;
-    /*border: 5px solid red;*/
+    margin: 0 5rem 0 5rem;
 }
 
 #main{
@@ -55,10 +54,11 @@ body{
 
 }
 #motto h2{
-    backdrop-filter: blur(2px);
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: rgba(255,255,255,0.05);
-    padding: .75rem;
+    padding: .45rem;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 #basic{
