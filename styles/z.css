@@ -1,3 +1,137 @@
+html{
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(45deg, green,lightgreen);
+    display: flex;
+    justify-content: center;
+    margin: 0 10rem 0 10rem;
+    /*border: 5px solid red;*/
+}
+
+#main{
+    background-color: white;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+	border-left-style: solid;
+	border-left-width: 7px;
+	border-left-color: green;
+	border-right-style: solid;
+	border-right-width: 7px;
+	border-right-color: green;
+}
+
+
+
+
+#paralax{
+    
+    min-height: 46.875rem;
+    max-width: 100rem; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+
+#center-logo{
+    display:flex;
+    opacity: .75;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+#motto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-size: auto;
+
+}
+#motto h2{
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.05);
+    padding: .75rem;
+}
+
+#basic{
+    display: flex;
+    align-items: center;
+    padding: 0 3rem 0 3rem;
+    background-color: green;
+    justify-content: center;
+    opacity: 1;
+}
+
+#parent{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#textBox{
+	
+	border-style: solid;
+	border-width: 5px;
+	border-color: green;
+	border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 2px;
+}
+
+#textBox > h4{
+    color: green;
+}
+
+#footer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0 3rem 0 3rem;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+a{
+    transition: all .2s ease-in-out;
+}
+
+a:link {
+    text-decoration: none;
+    color: green;
+}
+  
+a:visited {
+    text-decoration: none;
+    color: green;
+}
+
+
+a:hover{
+    animation-fill-mode: forwards;
+    transition: all .2s ease-in-out;
+    color: rgb(111, 223, 111);
+}
+
+header{
+	border-bottom-style: solid;
+	border-bottom-width: 8px;
+	border-bottom-color: green;
+	opacity: 1;
+}
 
 .slidecont{
     display: flex;
@@ -16,7 +150,7 @@
     border-radius: 10px;
 	border-width: 5px;
 	border-style: solid;
-	border-color: white;
+	border-color: green;
     overflow: hidden;
     z-index: 5;
 }
@@ -77,4 +211,110 @@
 }
 #radio4:checked ~ .first{
     margin-left: -60%;
+}
+
+/*INFSLIDES*/
+.infslidecont{
+    display: flex;
+    justify-content: center;
+}
+
+.infslidecontainer{
+    width: 1600px;
+    height: 250px;
+}
+.infslider{
+	width: 800px;
+	height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.infslides{
+    width: 500%;
+    height: 250px;
+    display: flex;
+}
+
+.infslides input{
+    display: none;
+}
+
+.infslide{
+    width: 10%;
+    transition: 2s;
+}
+.infslides div h2{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.infslides div p{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.infslide img{
+    width: 800px;
+    height: 500px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid;
+    border-color: green;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover {
+    background-color: green;
+}
+
+
+#radioInf1:checked ~ .first{
+    margin-left: 0;
+}
+#radioInf2:checked ~ .first{
+    margin-left: -10%;
+}
+#radioInf3:checked ~ .first{
+    margin-left: -20%;
+}
+#radioInf4:checked ~ .first{
+    margin-left: -30%;
+}
+#radioInf5:checked ~ .first{
+    margin-left: -40%;
+}
+#radioInf6:checked ~ .first{
+    margin-left: -50%;
+}
+#radioInf7:checked ~ .first{
+    margin-left: -60%;
+}
+#radioInf8:checked ~ .first{
+    margin-left: -70%;
+}
+#radioInf9:checked ~ .first{
+    margin-left: -80%;
+}
+#radioInf10:checked ~ .first{
+    margin-left: -90%;
+}
+.infoSlides{
+	
 }
