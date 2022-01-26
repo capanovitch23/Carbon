@@ -4,7 +4,14 @@ html{
 }
 
 body{
-    background-image: linear-gradient(white, green);
+    background-color: green;
+	background-image: url("images/bkg.jpg");
+
+    backdrop-filter: blur(2px);
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
     display: flex;
     justify-content: center;
     margin: 0 10rem 0 10rem;
@@ -12,12 +19,8 @@ body{
 }
 
 #main{
-    background-color: green;
-	background-image: url("images/bkg.jpg");
-	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
+	backdrop-filter: blur(6px);
+    background-color: rgba(0,128,0,.1);
 }
 
 
@@ -80,7 +83,6 @@ body{
     grid-gap: 1rem;
     padding: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); /*auto-fill is the ducktape holding this proj togeather rn*/
-	backdrop-filter: blur(6px);
     font-family: 'Copperplate Gothic';
 }
 
