@@ -6,15 +6,16 @@ html{
 body{
     background-color: green;
 	background-image: url("images/bkg.jpg");
+    display: flex;
 
-    backdrop-filter: blur(2px);
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    display: flex;
     justify-content: center;
-    margin: 0 5rem 0 5rem;
+    margin: 0 -1rem 0 -1rem;
+	overflow: scroll;
+    overflow-x: hidden;
 }
 
 #main{
@@ -28,7 +29,6 @@ body{
 #paralax{
     
     min-height: 46.875rem;
-    max-width: 100rem; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,7 +39,6 @@ body{
 #center-logo{
     display:flex;
     opacity: .75;
-    display:flex;
     align-items: center;
     justify-content: center;
     padding-top: 10%;
@@ -162,6 +161,7 @@ body{
     padding: 2rem;
     margin: 2rem;
     border-radius: 2px;
+	max-width: 90rem;
 }
 
 #textBox > h4{

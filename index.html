@@ -7,9 +7,51 @@
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/svg.css">
         <link rel="stylesheet" href="styles/header.css">
+		<link rel="stylesheet" href="styles/modal.css">
         <title>Oxygen Conservation Organization</title>
     </head>
-        <body>
+        <body id="body" id="body">
+			<div id="myModal" class="modal">
+                <div class="modalCont">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1 style="color:black;"><bold>Sources:</bold></h1>
+                        <p style="color:green;"> 
+                            <a class="subhead"> What is a carbon footprint: <br> </a>
+                            <a href="https://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide">https://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide <br></a>
+							<a href="https://en.wikipedia.org/wiki/Ecological_footprint">https://en.wikipedia.org/wiki/Ecological_footprint <br></a>
+
+                            <br>
+							<a class="subhead">Why you should worry about your carbon footprint: <br></a>
+                            <a href="https://www.nature.org/en-us/get-involved/how-to-help/carbon-footprint-calculator/">https://www.nature.org/en-us/get-involved/how-to-help/carbon-footprint-calculator/ <br></a>
+                            <a href="https://en.wikipedia.org/wiki/Effects_of_climate_change">https://en.wikipedia.org/wiki/Effects_of_climate_change <br></a>
+                            <a href="https://www.worldwildlife.org/pages/why-are-glaciers-and-sea-ice-melting">https://www.worldwildlife.org/pages/why-are-glaciers-and-sea-ice-melting <br></a>
+                            <a href="https://www.usgs.gov/faqs/how-would-sea-level-change-if-all-glaciers-melted">https://www.usgs.gov/faqs/how-would-sea-level-change-if-all-glaciers-melted <br></a>
+                            <a href="https://www.forbes.com/sites/trevornace/2017/05/09/heres-what-earth-would-look-like-if-all-the-ice-melted/">https://www.forbes.com/sites/trevornace/2017/05/09/heres-what-earth-would-look-like-if-all-the-ice-melted/ <br></a>
+                            <a href="https://www.vox.com/a/weather-climate-change-us-cities-global-warming">https://www.vox.com/a/weather-climate-change-us-cities-global-warming <br></a>
+                            <a href="https://www.epa.gov/climate-indicators/climate-change-indicators-us-and-global-temperature">https://www.epa.gov/climate-indicators/climate-change-indicators-us-and-global-temperature <br></a>
+                            <a href="https://www.nrdc.org/stories/fossil-fuels-dirty-facts">https://www.nrdc.org/stories/fossil-fuels-dirty-facts <br></a>
+                            <a href="https://www.nationalgeographic.org/encyclopedia/fossil-fuels/">https://www.nationalgeographic.org/encyclopedia/fossil-fuels/ <br></a>
+
+
+                            <br>
+                            <a class="subhead">How you can reduce your carbon footprint: <br> </a>
+                            <a href="">https://sustainabilitymag.com/top10/ways-reduce-your-carbon-footprint <br></a>
+                            <a href="">https://www.anspblog.org/reduce-your-household-energy-use/ <br></a>
+
+                            <br>
+                            <a class="subhead">Sentence Summaries: <br></a>
+                            <a href="https://www3.epa.gov/climatechange/ghgemissions/individual.xml.htm">https://www3.epa.gov/climatechange/ghgemissions/individual.xml.html <br></a>
+                            <a href="https://www.google.com/search?q=what+is+a+carbon+footprint">https://www.google.com/search?q=what+is+a+carbon+footprint <br></a>
+                            <a href="https://www.greenmatters.com/p/how-do-carbon-emissions-affect-environment">https://www.greenmatters.com/p/how-do-carbon-emissions-affect-environment <br></a>
+                            <a href="https://www.bbc.co.uk/bitesize/guides/zt6sfg8/revision/2">https://www.bbc.co.uk/bitesize/guides/zt6sfg8/revision/2 <br></a>
+                            <a href="https://cotap.org/reduce-carbon-footprint/">https://cotap.org/reduce-carbon-footprint/ <br></a>
+
+
+                        </p>
+                    </div>
+                </div>
+			</div>
             <div id="main">
 
                 <header>
@@ -40,7 +82,7 @@
                             <h1> <a href="#main">O</a></h1>
                         </div>
                         </div>
-                    <h5>about | to help</h5>
+                    <h6><nav><a href="credits.html">Credits</a> | <button id="myBtn">Sources</button></nav></h6>
                 </header>
             
                 <div id="paralax">
@@ -70,8 +112,7 @@
             
         <div id="backgroundBlur">
                 <div id="basic"><br></div>
-            
-                <div id="textBox">
+            <div id="textBox">
                     <h1>Our Mission</h1>
                     <p>Carbon footprint, global warming, greenhouse effect, climate change - words we hear alot these days, but do we know what they mean? We believe that truly understanding a problem is the first step towards solving it. That is why we created this website! We wanted to make a place where anyone could learn about the biggest threat to the future of our planet: <b>Climate Change</b>.</p>
                     <p>As you explore this website, we ask that you don't just read, but understand, apply, and share our tips, tricks, and other recomendations.</p>
@@ -80,6 +121,7 @@
                     <p>Thank you for choosing us.</p>
                     <h4>- The Oxygen Conservation Organization</h4>
                 </div>
+                
             
             <div id="parent">
                 <div id="container"> <!--informational redirects-->
@@ -99,10 +141,8 @@
             </div>
         
             <div id="footer">
-                <h6>
-                    <a href="subpages/disclaimer.html">Disclaimer</a>
-                </h6>
-                <h6><a href="subpages/credits.html">Credits</a></h6>
+				<h6><a href="#main">Home</a></h6>
+                <h6 style="color: green;">IT Academy-Junior Class. Created 2022.</h6>
             </div>
             
         </div>
@@ -110,5 +150,7 @@
             </div>  
         
             <script src="scripts.js"></script>
+			<script src="modal.js"></script>
+			
         </body>
     </html>

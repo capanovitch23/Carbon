@@ -1,6 +1,6 @@
 
 function pageOne() {
-    location.href = "subpages/x.html";
+    location.href = "x.html";
 }
   
 function pageTwo() {
